@@ -1,3 +1,20 @@
-// Place all the styles related to the static_pages controller here.
+// Place all the styles related to the StaticPages controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+h3 {
+  text-align: left;
+  tab-size: 8;
+}
+p {
+  font-family: Calibri,sans-serif;
+  font-size: 1.1em;
+  border: 2px solid blue;
+  display: block;
+  width: 80%;
+  line-height: 2;
+  padding: 10px;
+    }
+
+h1 {
+   font-size: 2em;
+ }
