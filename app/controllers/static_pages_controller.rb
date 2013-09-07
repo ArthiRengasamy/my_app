@@ -5,7 +5,13 @@ class StaticPagesController < ApplicationController
   def products
 
   end
-  def contact_us
+  def contact
+
+  end
+  def help
+
+  end
+  def story
 
   end
 end

@@ -6,7 +6,31 @@
   bad nymph, for quick jigs vex! Fox nymphs grab quick-jived waltz. Brick quiz
   whangs jumpy veldt fox. Bright vixens jump; dozy fowl quack.</p>
 
-  <span><%= link_to "Read Volunteer success stories",story_path,class: "btn btn-large btn-primary" %>
+  <div style="text-align: right "><%= link_to "Read Volunteer success stories",story_path,class: "btn btn-large btn-primary" %></div>
 
-</span>
+<form accept-charset="UTF-8" action="/users" class="new_user"
+      id="new_user" method="post">
+
+  <label for="area">Area of Interest</label>
+  <input id="area" name="user[area]" size="30" type="string" />
+
+  <label for="other">If other, please specify</label>
+  <input id="other" name="user[other]" size="30" type="text" />
+
+  <label for="user_name">Volunteer Name</label>
+  <input id="user_name" name="user[name]" size="30" type="string" />
+
+  <label for="gender">Volunteer Name</label>
+  <input id="gender" name="user[gender]" size="30" type="string" />
+
+  <label for="user_email">Email</label>
+  <input id="user_email" name="user[email]" size="30" type="string" />
+
+  <label for="address">Address</label>
+  <input id="address" name="user[address]" size="50" type="text" />
+
+  <input class="btn btn-large btn-primary" name="commit" type="submit"
+         value="Sign up" />
+</form>
+
 

@@ -1,5 +1,8 @@
 MyApp::Application.routes.draw do
 
+  resources :enquiries
+
+
   get 'static_pages/home'
   get 'static_pages/products'
   get 'static_pages/contact'
@@ -20,7 +23,7 @@ MyApp::Application.routes.draw do
 
 
   resources :users
-
+  match '/signup',      to: 'static_pages#help'
 
   # The priority is based upon order of creation:
   # first created -> highest priority.

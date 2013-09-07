@@ -2,5 +2,46 @@
 
 
 <h1>Products(Made by our NGO)</h1>
-<p>
-</p>
+
+<table>
+<tr>
+  <td><img src="http://blog.georgetownvoice.com/wp-content/uploads/2010/02/i_am_not_a_plastic_bag_image.jpg"</td>
+  <td><img src="http://blog.georgetownvoice.com/wp-content/uploads/2010/02/i_am_not_a_plastic_bag_image.jpg"</td>
+</tr>
+  <tr>
+    <td>Product code:0001</td>
+    <td>Product code:0002</td>
+   </tr>
+
+</table>
+
+<h3>General product enquiry</h3>
+
+<form accept-charset="UTF-8" action="/enquiries" class="new_enquiry"
+      id="new_enquiry" method="post">
+
+  <label for="name">Name</label>
+  <input id="name" name="enquiry[name]" size="30" type="string" />
+
+  <label for="phone">Name</label>
+  <input id="phone" name="enquiry[phone]" size="30" type="integer" />
+
+  <label for="address">Address</label>
+  <input id="address" name="enquiry[address]" size="50" type="text" />
+
+  <label for="email">Email</label>
+  <input id="email" name="enquiry[email]" size="30" type="string" />
+
+  <label for="itemcode">Product Itemcode</label>
+  <input id="itemcode" name="enquiry[itemcode]" size="30" type="integer" />
+
+  <label for="pieces">Number of pieces</label>
+  <input id="pieces" name="enquiry[pieces]" size="30" type="integer" />
+
+  <label for="comments">Comments with delivery specifications</label>
+  <input id="comments" name="enquiry[comments]" size="100" type="text" />
+  <label></label>
+  <input class="btn btn-large btn-primary" name="commit" type="submit"
+         value="Submit" />
+
+</form>
