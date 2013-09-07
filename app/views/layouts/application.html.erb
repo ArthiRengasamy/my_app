@@ -1,24 +1,19 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title><%= full_title(yield(:title) %></title>
+  <title>
+    <%= full_title(yield(:title)) %>
+  </title>
+  <%= stylesheet_link_tag    "application", media: "all" %>
   <%= javascript_include_tag "application" %>
   <%= csrf_meta_tags %>
+  <%= render 'layouts/shim' %>
   <link type="text/css" rel="stylesheet" href="stylesheet/static_pages.css.scss"/>
-  <h1>
-    <img src="http://t3.gstatic.com/images?q=tbn:ANd9GcQCtYYeXG3W2k2wvXQys1pU630UngPpqBS4__mA1sLsC-4NiTmV6A"/>
-  </h1>
-  <h3>
-    <span><a href="#home">Home</a></span>
-    <span> <a href=#home">How you can help</a> </span>
-    <span> <a href=#home">Products</a>    </span>
-    <span><a href=#home">Success stories</a>   </span>
-    <span><a href=#home">Contact Us</a>  </span>
-  </h3>
 </head>
 <body>
-
-<%= yield %>
-
+<%= render 'layouts/header' %>
+<div class="container">
+    <%= yield %>
+</div>
 </body>
 </html>

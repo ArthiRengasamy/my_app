@@ -1,5 +1,19 @@
 MyApp::Application.routes.draw do
-  get "static_pages/home"
+
+  get 'static_pages/home'
+  get 'static_pages/products'
+  get 'static_pages/contact'
+  get 'static_pages/help'
+  get 'static_pages/story'
+
+  root to: 'static_pages#home'
+  match '/signup',  to: 'users#new'
+
+  match '/home',        to: 'static_pages#home'
+  match '/products',    to: 'static_pages#products'
+  match '/contact',     to: 'static_pages#contact'
+  match '/help',        to: 'static_pages#help'
+  match '/story',        to: 'static_pages#story'
 
   resources :stories
 
