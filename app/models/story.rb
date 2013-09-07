@@ -12,4 +12,6 @@
 class Story < ActiveRecord::Base
   attr_accessible :content, :user_id
   belongs_to :user
+  validates :content, :length => { :maximum => 140 }
+  default_scope order: 'stories.created_at DESC'
 end

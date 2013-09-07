@@ -13,7 +13,7 @@ class StoriesController < ApplicationController
   # GET /stories/1
   # GET /stories/1.json
   def show
-    @story = Story.find(params[:id])
+    @stories = story.paginate(page: params[:page])
 
     respond_to do |format|
       format.html # show.html.erb

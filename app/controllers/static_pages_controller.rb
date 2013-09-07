@@ -13,5 +13,9 @@ class StaticPagesController < ApplicationController
   end
   def story
 
+        @stories = Story.order('created_at desc')
+
+
+
   end
 end

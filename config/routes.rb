@@ -20,8 +20,6 @@ MyApp::Application.routes.draw do
 
   resources :stories
 
-
-
   resources :users
   match '/signup',      to: 'static_pages#help'
 

@@ -6,13 +6,18 @@
   bad nymph, for quick jigs vex! Fox nymphs grab quick-jived waltz. Brick quiz
   whangs jumpy veldt fox. Bright vixens jump; dozy fowl quack.</p>
 
-  <div style="text-align: right "><%= link_to "Read Volunteer success stories",story_path,class: "btn btn-large btn-primary" %></div>
+  <div style="text-align: right"><%= link_to "Read Volunteer success stories",story_path,class: "btn btn-large btn-primary" %></div>
 
-<form accept-charset="UTF-8" action="/users" class="new_user"
+<form accept-charset="UTF-8" action="/help" class="new_user"
       id="new_user" method="post">
 
   <label for="area">Area of Interest</label>
-  <input id="area" name="user[area]" size="30" type="string" />
+  <select id="area" name="user[area]">
+    <option value="1">Empowerment of Women</option>
+    <option value="2">Child Education</option>
+    <option value="3">Food for the poor</option>
+    <option value="4">Other</option>
+  </select>
 
   <label for="other">If other, please specify</label>
   <input id="other" name="user[other]" size="30" type="text" />
@@ -20,15 +25,20 @@
   <label for="user_name">Volunteer Name</label>
   <input id="user_name" name="user[name]" size="30" type="string" />
 
-  <label for="gender">Volunteer Name</label>
-  <input id="gender" name="user[gender]" size="30" type="string" />
+  <label for="gender">Gender</label>
+  <select id="gender" name="user[gender]" >
+    <option value="1">Male</option>
+    <option value="2">Female</option>
+    <option value="3">Transgender</option>
+    <option value="4">Prefer not to disclose</option>
+  </select>
 
   <label for="user_email">Email</label>
   <input id="user_email" name="user[email]" size="30" type="string" />
 
   <label for="address">Address</label>
   <input id="address" name="user[address]" size="50" type="text" />
-
+  <label></label>
   <input class="btn btn-large btn-primary" name="commit" type="submit"
          value="Sign up" />
 </form>
